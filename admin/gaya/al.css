@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Black+Ops+One&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Kalam&subset=latin,latin-ext);
+
+#welcome{
+    padding-top:2%;
+    font-family: 'Black Ops One', cursive;
+    font-size:20px;
+}
+
+#tentang{
+   font-family: 'Kalam', cursive;
+   font-size:50px;
+   padding-top:3%;
+}
+}
+tr{
+  padding-top: 20px;
+}
+
+td{
+  padding-top:20px;
+  padding-left:20px;
+}
+
+html {
+    font-family:calibri;
+}
+h1 {
+    margin:0px;
+}
+#popup {
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.3);
+}
+.jelndela-popup {
+	padding:10px;
+    position:relative;
+    background:#fff;
+    width:500px;
+    margin:15% auto 0;
+    border-top:4px solid #737078;
+}   
+.close {
+    position:absolute;
+    right:15px;
+    top:10px;
+    color:#96c;
+    text-decoration:none;
+    font-size:20px;
+    font-family: 'Kalam', cursive;
+    padding:2px 5px;
+    background:#eee;
+}
+.tombol-popup{
+    width:200px;
+    text-align:center;
+    margin:5% auto 0;
+    border-radius:3px;
+    color:#bbeeff;
+    text-decoration:none;
+    background:#99ccff;
+    overflow:hidden;
+    box-shadow:0px 0px 5px #77aaff;
+}
+.tombol-popup a{
+    display:block;
+    font-size:15px;
+    color:#fff;
+    text-decoration:none;
+}
+#popup:target {
+    display:block;
+}
+body {
+     margin: 0;
+     padding: 0;
+     text-align: center;
+}
+bg {
+     width: 100%;
+     height: 100%;
+     position: fixed;
+     z-index: 1;
+     float: left;
+     left: 0;
+}
+content {
+     width: 80%;
+     height: auto;
+     margin: 0 auto;
+     position: relative;
+     z-index: 5;
+     background: #fff;
+     padding: 30px;
+     text-align: left;
+}
+
