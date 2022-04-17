@@ -1,4 +1,4 @@
-<h3>Data pelanggan<h3>
+<h3>Data Pelanggan<h3>
 
 <table width="1000" border="7" cellspacing="3" cellpadding="5" align="center">
 	<thead>
