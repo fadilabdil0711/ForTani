@@ -1,4 +1,4 @@
-<h2>detail pembelian</h2>
+<h2>Detail pembelian</h2>
 <?php include "koneksi.php"; ?>
 
 <?php 

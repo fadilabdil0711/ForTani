@@ -1,4 +1,4 @@
-<h2>Data pembayaran</h2>
+<h2>Data Pembayaran</h2>
 
 <?php 
 

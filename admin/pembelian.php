@@ -1,4 +1,4 @@
-<h3>Data pembelian<h3>
+<h3>Data Pembelian<h3>
 
 <table class="table table-bordered table-striped table-responsive table-hover">
 	<thead class="thead-inverse">
