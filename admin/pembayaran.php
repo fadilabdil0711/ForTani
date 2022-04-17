@@ -1,4 +1,4 @@
-<h2>data pembayaran</h2>
+<h2>Data pembayaran</h2>
 
 <?php 
 
@@ -8,9 +8,9 @@ $id_pembelian = $_GET["id"];
 
 $ambil = $koneksi->query("SELECT * FROM pembayaran  WHERE id_pembelian='$id_pembelian'");
 $pecah = $ambil->fetch_assoc();
-echo "<pre>";
-print_r($pecah);
-echo "</pre>";
+// echo "<pre>";
+// print_r($pecah);
+// echo "</pre>";
 
  ?>
 
