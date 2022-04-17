@@ -1,4 +1,4 @@
-# toko_tani
+# ForTani
 login admin:
 username : admin
 password : admin
