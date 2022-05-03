@@ -22,7 +22,7 @@
 					<ul class="nav nav-pills">
 						<li><img align="center" alt="Brand" src="admin/assets/img/logo1.png"></li>
 						<li><a href="index.php">Home</a></li>
-            <li><a href="pasar.php">Belanja</a></li>
+           				<li><a href="pasar.php">Belanja</a></li>
 						<li><a href="keranjang.php">Keranjang</a></li>
 						<li><a href="checkout.php">Checkout</a></li>
 
@@ -33,9 +33,6 @@
 						<?php else: ?>
 						<li><a href="login.php">Login</a></li>
 						<?php endif ?>
-					<form action="pencarian.php" method="get" class="navbar-form navbar-right">
-						<input type="text" class="form-control" name="keyword">
-						<button class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
 					</form>
 					</ul>
 				</div>

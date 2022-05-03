@@ -44,8 +44,9 @@ if (empty($_SESSION['keranjang']))
 			<div class="container" color="blue">
 				<ul class="nav nav-pills">
 					<li><a href="index.php">Home</a></li>
-					<li><a href="pasar.php">Belanja</a></li>
+					<!-- <li><a href="pasar.php">Belanja</a></li> -->
 					<li class="active"><a href="keranjang.php">Keranjang</a></li>
+					<!-- <li><a href="checkout.php">Checkout</a></li> -->
 
 					<?php if (isset($_SESSION["pelanggan"])): ?>
 					<li><a href="logout.php">Logout</a></li>
@@ -53,8 +54,6 @@ if (empty($_SESSION['keranjang']))
 					<?php else: ?>
 					<li><a href="login.php">Login</a></li>
 					<?php endif ?>
-					<li><a href="checkout.php">Checkout</a></li>
-					<li><a href="admin/index.php">Admin</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -103,7 +102,7 @@ echo "</pre>";*/
 				<?php endforeach ?>
 			</tbody>
 		</table>
-		<a href="index.php" class="btn btn-default">Lanjutkan Belanja</a>
+		<a href="pasar.php" class="btn btn-default">Lanjutkan Belanja</a>
 		<a href="checkout.php" class="btn btn-primary">Checkout</a>
 	</div>
 </section>

@@ -31,15 +31,15 @@ if ($id_pelanggan_beli !== $id_pelanggan_login)
 <!DOCTYPE html>
 <html>
 <head>
-	<title>pembayaran</title>
+	<title>Pembayaran</title>
 	<link rel="stylesheet" href="admin/assets/css/bootstrap.css">
 </head>
 <body>
 	<?php include 'navbar.php'; ?>
 
 	<div class="container">
-		<h2>konfirmasi pembayaran</h2>
-		<p>kirim bukti pembayaran anda disini</p>
+		<h2>Konfirmasi Pembayaran</h2>
+		<p>Kirim Bukti Pembayaran Anda disini</p>
 		<div class="alert alert-info"> <h2>total tagihan anda adalah <b>Rp. <?php echo number_format($detail_pembelian["total_pembelian"]) ?></b></h2></div>
 
 		<form method="post" enctype="multipart/form-data">
@@ -48,7 +48,7 @@ if ($id_pelanggan_beli !== $id_pelanggan_login)
 				<input type="text" class="form-control" name="nama">
 			</div>
 			<div class="form-group">
-				<label for="">bank</label>
+				<label for="">Bank</label>
 				<input type="text" class="form-control" name="bank">
 			</div>
 			<div class="form-group">
@@ -75,7 +75,7 @@ if (isset($_POST["kirim"]))
 	$nama = $_POST["nama"];
 	$bank = $_POST["bank"];
 	$jumlah = $_POST["jumlah"];
-	$tanggal = date("d-m-y");
+	$tanggal = date("y-m-d");
 
 	$koneksi->query("INSERT INTO pembayaran(id_pembelian,nama,bank,jumlah,tanggal,bukti) VALUES ('$id_pembelian','$nama','$bank','$jumlah','$tanggal','$namafiks')");
 

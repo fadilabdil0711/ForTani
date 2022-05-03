@@ -86,8 +86,7 @@ include 'koneksi.php';
 			<ul class="nav nav-pills">
                 <li><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></li>
 				<li><img align="center" alt="Brand" src="admin/assets/img/logo1.png"></li>
-				<li><a href="#">Berita</a></li>
-				<li><a href="#">Forum</a></li>
+				<li><a href="#">Berita Tani</a></li>
 				<li><a href="pasar.php">Pasar Tani</a></li>
 			</ul>
 			</div>
@@ -117,7 +116,7 @@ include 'koneksi.php';
       </script>
     <div id="box" class="container p-3">
         <img id="gambar" src="admin/assets/img/home.png" style="max-width:100%;">
-        <h3 id="judul" >Website forum diskusi para petani untuk memudahkan petani dalam mencari informasi seputar pertanian.</h3>
+        <h3 id="judul" >Website forum para petani untuk memudahkan petani dalam bertukar informasi seputar pertanian.</h3>
     </div>
 </body>
 </html>

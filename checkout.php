@@ -51,11 +51,11 @@ if (empty($_SESSION['keranjang']))
 		<table class="table table-bordered">
 			<thead>
 				<tr>
-					<th>no</th>
-					<th>produk</th>
-					<th>harga</th>
-					<th>jumlah</th>
-					<th>subharga</th>
+					<th>No</th>
+					<th>Produk</th>
+					<th>Harga</th>
+					<th>Jumlah</th>
+					<th>Subharga</th>
 				</tr>
 			</thead>
 			

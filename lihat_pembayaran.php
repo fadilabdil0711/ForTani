@@ -34,38 +34,42 @@ if ($_SESSION["pelanggan"]["id_pelanggan"]!==$detbay["id_pelanggan"])
 <!DOCTYPE html>
 <html>
 <head>
-	<title>lihat pembayaran</title>
+	<title>lihat Pembayaran</title>
 	<link rel="stylesheet" href="admin/assets/css/bootstrap.css">
 </head>
 <body>
 	<?php include 'navbar.php'; ?>
 
 	<div class="container">
-		<h2>lihat pembayaran</h2>
-		<div class="row">
-			<div class="col-md-6">
-				<table class="table table-bordered">
+		<center><h2>Lihat Pembayaran</h2></center>
+		<div>
+			<div class="col-md-3">
+				<table class="table table-striped">
 					<tr>
-						<th>nama</th>
+						<th>Nama</th>
 						<td><?php echo $detbay["nama"] ?></td>
 					</tr>
 					<tr>
-						<th>bank</th>
+						<th>Bank</th>
 						<td><?php echo $detbay["bank"] ?></td>
 					</tr>
 					<tr>
-						<th>tanggal</th>
+						<th>Tanggal</th>
 						<td><?php echo $detbay["tanggal"] ?></td>
 					</tr>
 					<tr>
-						<th>jumlah</th>
+						<th>Jumlah</th>
 						<td>Rp. <?php echo $detbay["jumlah"] ?></td>
 					</tr>
+					<!-- <tr>
+						<th>Bukti Pembayaran</th>
+						<td><img src="bukti_pembayaran/<?php echo $detbay["bukti"] ?>" alt="" width=200%></td>
+					</tr> -->
 				</table>
 			</div>
-			<div class="col-md-6">
-				<img src="bukti_pembayaran/<?php echo $detbay["bukti"] ?>" alt="">
-			</div>
+		<div class="col-md-3">
+			<img src="bukti_pembayaran/<?php echo $detbay["bukti"] ?>" alt="" class="img-responsive">
+		</div>
 		</div>
 	</div>
 </body>

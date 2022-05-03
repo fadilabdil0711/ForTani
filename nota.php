@@ -4,9 +4,7 @@ include 'koneksi.php';
 
  ?>
 
-
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 
  <html>
  <head>
@@ -68,16 +66,16 @@ if ($idyangbeli != $idyanglogin)
  ?>
 
  <div class="row">
- 	<div class="col-md-4">
- 		<h3>pembelian</h3>
+ 	<div class="col-md-3">
+ 		<h3>Pembelian</h3>
  		<strong>
  			No. pembelian : <?php echo $detail ['id_pembelian']; ?><br>
  			tanggal : <?php echo $detail["tanggal_pembelian"]; ?> <br>
  			Total : <?php echo $detail["total_pembelian"]; ?>
  		</strong>
  	</div>
- 	<div class="col-md-4">
- 		<h3>pelanggan</h3>
+ 	<div class="col-md-5">
+ 		<h3>Pelanggan</h3>
  		<strong>Nama Pelanggan : <?php echo $detail["nama_pelanggan"]; ?></strong><br>
  		<p>
  			telepon pelanggan : <?php echo $detail["telepon_pelanggan"]; ?><br>
@@ -101,13 +99,13 @@ if ($idyangbeli != $idyanglogin)
  <table class="table table-bordered">
  	<thead>
  		<tr>
- 			<th>no</th>
- 			<th>nama produk</th>
- 			<th>harga</th>
- 			<th>berat</th>
- 			<th>jumlah</th>
- 			<th>subberat</th>
- 			<th>subtotal</th>
+ 			<th>No</th>
+ 			<th>Nama Produk</th>
+ 			<th>Harga</th>
+ 			<th>Berat</th>
+ 			<th>Jumlah</th>
+ 			<th>Subberat</th>
+ 			<th>Subtotal</th>
  		</tr>
  	</thead>
  	<tbody>
@@ -169,9 +167,9 @@ if ($idyangbeli != $idyanglogin)
  				</p><br>
  				<div class="alert alert-info">
  					<p>
- 						Konfirmasi Pembayaran Melalui Email ke <b>fortani_indonesia06@gmail.com</b> Setelah Melakukan Transfer. Dengan Format :<br>
+ 						Konfirmasi Pembayaran Melalui Email ke <b>fortani_indonesia@gmail.com</b> Setelah Melakukan Transfer. Dengan Format :<br>
  						Subjek : Konfirmasi Pembayaran <br>
- 						Kode Pembelian : <b>misal : P12</b> <br>
+ 						Kode Pembelian : <b>misal : TMS16</b> <br>
  						Nama Pengirim Rek. : <b>misal : admin</b><br>
  						Jumlah Transfer : <b>misal : 500000</b><br>
  						Lampiran/attachment : <b>Bukti Pembayaran Transfer</b>

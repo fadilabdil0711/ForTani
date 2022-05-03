@@ -1,6 +1,6 @@
 <h3>Data Pelanggan<h3>
 
-<table width="1000" border="7" cellspacing="3" cellpadding="5" align="center">
+<table class="table table-striped" border="7" cellspacing="3" cellpadding="5" align="center">
 	<thead>
 		<tr align="center" bgcolor="white">
 			<td>nomor</td>
