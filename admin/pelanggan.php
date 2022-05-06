@@ -3,12 +3,12 @@
 <table class="table table-striped" border="7" cellspacing="3" cellpadding="5" align="center">
 	<thead>
 		<tr align="center" bgcolor="white">
-			<td>nomor</td>
-			<td>email</td>
-			<td>password</td>
-			<td>nama</td>
-			<td>telepon</td>
-			<td>aksi</td>
+			<td>Nomor</td>
+			<td>Email</td>
+			<td>Password</td>
+			<td>Nama</td>
+			<td>No. telepon</td>
+			<td>Action</td>
 		</tr>
 	</thead>
 	<tbody>
