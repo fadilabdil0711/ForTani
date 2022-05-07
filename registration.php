@@ -81,7 +81,7 @@ include 'koneksi.php';
                                         </div>
                                          <div class="form-group input-group">
                                             <span class="input-group-addon">@</span>
-                                            <input type="text" class="form-control" placeholder="Alamat Email" name="email" required/>
+                                            <input type="email" id="email" class="form-control" placeholder="Alamat Email" name="email" required/>
                                         </div>
                                       <div class="form-group input-group">
                                             <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>

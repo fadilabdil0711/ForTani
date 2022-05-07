@@ -3,7 +3,7 @@ session_start() ;
 include 'koneksi.php';
 if(!isset($_SESSION['pelanggan']))
 {
-  echo "<script>alert('Login Dulu ya ciiiin')</script>";
+  echo "<script>alert('Login Dulu ya ')</script>";
   echo "<script>location='login.php'</script>";
   header('location:login.php');
   exit();

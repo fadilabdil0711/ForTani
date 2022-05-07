@@ -19,7 +19,18 @@ include 'koneksi.php';
   <link href="assets/css/custom.css" rel="stylesheet" />
   <!-- GOOGLE FONTS-->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-
+  <style>
+			body {
+				background: url('assets/img/Frame 2.png') no-repeat center center fixed; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				overflow-x: hidden;
+				font-family: 'Roboto', sans-serif;
+				font-size: 16px;
+        }
+		</style>
 </head>
 <body>
   <div class="container">
