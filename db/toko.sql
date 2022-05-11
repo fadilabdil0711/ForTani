@@ -39,8 +39,8 @@ CREATE TABLE `admin` (
 
 INSERT INTO `admin` (`id_admin`, `user`, `pass`, `nama`) VALUES
 (1, 'admin', 'admin', 'admin'),
-(3, 'panji', 'panji06', 'panji');
-
+(2, 'fadil', 'fadil', 'fadil');
+(3, 'rizqi', 'rizqi', 'rizqi');
 -- --------------------------------------------------------
 
 --
@@ -208,7 +208,26 @@ INSERT INTO `produk` (`id_produk`, `nama_produk`, `harga_produk`, `berat_produk`
 --
 -- Indexes for dumped tables
 --
+CREATE TABLE `berita` (
+  `id_berita` int(11) NOT NULL,
+  `judul` varchar(100) NOT NULL,
+  `id_kategori` int(11) NOT NULL,
+  `gambar` varchar(100) NOT NULL,
+  `teks_berita` text NOT NULL,
+  `tgl_posting` datetime NOT NULL,
+  `id_admin` int(11) NOT NULL,
+  `dilihat` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+CREATE TABLE `kategori` (
+  `id_kategori` int(11) NOT NULL,
+  `kategori` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `kategori` (`id_kategori`, `kategori`) VALUES
+(1, 'pertanian'),
+(2, 'perkebunan'),
+(3, 'perikanan');
 --
 -- Indexes for table `admin`
 --
@@ -220,6 +239,12 @@ ALTER TABLE `admin`
 --
 ALTER TABLE `ongkir`
   ADD PRIMARY KEY (`id_ongkir`);
+
+ALTER TABLE `berita`
+  MODIFY `id_berita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+ALTER TABLE `kategori`
+  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Indexes for table `pelanggan`
@@ -251,6 +276,11 @@ ALTER TABLE `pembelian_produk`
 ALTER TABLE `produk`
   ADD PRIMARY KEY (`id_produk`);
 
+ALTER TABLE `berita`
+  ADD PRIMARY KEY (`id_berita`);
+
+ALTER TABLE `kategori`
+  ADD PRIMARY KEY (`id_kategori`);
 --
 -- AUTO_INCREMENT for dumped tables
 --

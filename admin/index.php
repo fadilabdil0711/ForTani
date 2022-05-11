@@ -60,6 +60,7 @@ if(!isset($_SESSION['admin']))
           					<li><a href="index.php?halaman=pembelian"><i class="fa fa-shopping-cart"></i>Pembelian</a></li>
           					<li><a href="index.php?halaman=pelanggan"><i class="fa fa-user"></i>Pelanggan</a></li>
                     <li><a href="index.php?halaman=laporan_pembelian"><i class="fa fa-file"></i>Laporan</a></li>
+                    <li><a href="index.php?halaman=daftar_berita"><i class="fa fa-newspaper-o"></i>Berita</a></li>
                     <li><a href="index.php?halaman=logout"><i class="fa fa-sign-out"></i>Logout</a></li>
                 </ul>
                
@@ -100,6 +101,22 @@ if(!isset($_SESSION['admin']))
           {
             include 'ubahproduk.php';
           }
+          elseif ($_GET['halaman']=="ubahberita")
+          {
+            include 'ubahberita.php';
+          }
+          elseif ($_GET['halaman']=="tambahberita")
+          {
+            include 'tambahberita.php';
+          }
+          elseif ($_GET['halaman']=="hapusberita")
+          {
+            include 'hapusberita.php';
+          }
+          elseif ($_GET['halaman']=="detailberita")
+          {
+            include 'detailberita.php';
+          }
           elseif ($_GET['halaman']=="pembayaran")
           {
             include 'pembayaran.php';
@@ -107,6 +124,10 @@ if(!isset($_SESSION['admin']))
           elseif ($_GET['halaman']=="laporan_pembelian")
           {
             include 'laporan_pembelian.php';
+          }
+          elseif ($_GET['halaman']=="daftar_berita")
+          {
+            include 'daftar_berita.php';
           }
           elseif ($_GET['halaman']=="logout")
           {

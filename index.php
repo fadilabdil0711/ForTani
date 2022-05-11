@@ -86,7 +86,7 @@ include 'koneksi.php';
 			<ul class="nav nav-pills">
                 <li><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></li>
 				<li><img align="center" alt="Brand" src="admin/assets/img/logo1.png"></li>
-				<li><a href="#">Berita Tani</a></li>
+				<li><a href="berita.php">Berita Tani</a></li>
 				<li><a href="pasar.php">Pasar Tani</a></li>
 			</ul>
 			</div>

@@ -21,7 +21,7 @@ $id_pelanggan_beli = $detail_pembelian["id_pelanggan"];
 
 $id_pelanggan_login = $_SESSION["pelanggan"]["id_pelanggan"];
 
-if ($id_pelanggan_beli !== $id_pelanggan_login) 
+if ($id_pelanggan_beli !== $id_pelanggan_login)
 {
 	echo "<script>alert('jangan nakal');</script>";
 	echo "<script>location='riwayat.php'</script>";

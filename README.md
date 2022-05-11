@@ -1,4 +1,4 @@
 # ForTani
-login admin:
+login admin
 username : admin
 password : admin

@@ -111,7 +111,7 @@ include 'koneksi.php';
 
                                             echo "<script>alert ('Regiistrasi Akun Berhasil'); </script>";
                                             echo "<div class='alert alert-info'>Akun Berhasil ditambahkan</div>";
-                                            echo "<meta http-equiv='refresh' content='1;url=index.php'>";
+                                            echo "<meta http-equiv='refresh' content='1;url=login.php'>";
                                         }
                                         ?>
 
