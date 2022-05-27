@@ -19,15 +19,7 @@ if (!isset($_SESSION["pelanggan"]) OR empty($_SESSION["pelanggan"]))
 			<link rel="stylesheet" href="admin/assets/css/bootstrap.css">
 
 </head>
-<body>
-	<nav class="navbar navbar-default" align="center">
-  		<div class="container">
-    		<div class="navbar-header">
-       			<!-- <img alt="Brand" src="admin/assets/img/logo1.png"> -->
-   			</div>
-  		</div>
-	</nav>
-		
+<body>	
 	<?php include "navbar.php"; ?>
 
 	<section class="riwayat">

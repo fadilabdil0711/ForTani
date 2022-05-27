@@ -81,9 +81,21 @@ if(!isset($_SESSION['admin']))
 					{
 						include 'pembelian.php';
 					}
+          elseif ($_GET['halaman']=="home")
+					{
+						include 'home.php';
+					}
+          elseif ($_GET['halaman']=="editprofil")
+					{
+						include 'edit_profil.php';
+					}
 					elseif ($_GET['halaman']=="pelanggan")
 					{
 						include 'pelanggan.php';
+					}
+          elseif ($_GET['halaman']=="hapususer")
+					{
+						include 'hapus_pelanggan.php';
 					}
           elseif ($_GET['halaman']=="detail")
           {

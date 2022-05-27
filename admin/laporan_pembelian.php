@@ -64,7 +64,6 @@ if (isset($_POST["kirim"]))
 		<?php $total=0; ?>
 		<?php foreach ($semuadata as $key => $value): ?>
 		<?php $total+=$value["total_pembelian"]; ?>
-			
 		<tr>
 			<td><?php echo $key+1; ?></td>
 			<td><?php echo $value["nama_pelanggan"]; ?></td>

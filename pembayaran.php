@@ -53,7 +53,7 @@ if ($id_pelanggan_beli !== $id_pelanggan_login)
 			</div>
 			<div class="form-group">
 				<label for="">Jumlah</label>
-				<input type="number" class="form-control" name="jumlah">
+				<input type="text" class="form-control" name="jumlah" readonly value="<?php echo $detail_pembelian["total_pembelian"]?>">
 			</div>
 			<div class="form-group">
 				<label for="">Foto bukti</label>

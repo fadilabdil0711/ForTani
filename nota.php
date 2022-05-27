@@ -165,17 +165,6 @@ if ($idyangbeli != $idyanglogin)
  					<b>Fadil Abdillah</b> Sebesar
  					<b>Rp. <?php echo number_format($detail ['total_pembelian']);?></b>
  				</p><br>
- 				<div class="alert alert-info">
- 					<p>
- 						Konfirmasi Pembayaran Melalui Email ke <b>fortani_indonesia@gmail.com</b> Setelah Melakukan Transfer. Dengan Format :<br>
- 						Subjek : Konfirmasi Pembayaran <br>
- 						Kode Pembelian : <b>misal : TMS16</b> <br>
- 						Nama Pengirim Rek. : <b>misal : admin</b><br>
- 						Jumlah Transfer : <b>misal : 500000</b><br>
- 						Lampiran/attachment : <b>Bukti Pembayaran Transfer</b>
-
- 					</p>
- 				</div>
  			</div>
  		</div>
  	</div>

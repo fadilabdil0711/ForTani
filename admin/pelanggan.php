@@ -22,7 +22,7 @@
 			<td align="center"><?php echo $pecah['nama_pelanggan'];?></td>
 			<td align="center"><?php echo $pecah['telepon_pelanggan'];?></td>
 			<td align="center">
-				<a href="" class="btn-danger btn">hapus</a>
+				<a href="index.php?halaman=hapususer&id=<?php echo $pecah['id_pelanggan']; ?>" class="btn-danger btn">Blokir</a>
 			</td>
 		</tr>
 		<?php $nomor++; ?>
