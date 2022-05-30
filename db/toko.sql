@@ -30,7 +30,8 @@ CREATE TABLE `admin` (
   `id_admin` int(11) NOT NULL,
   `user` varchar(44) NOT NULL,
   `pass` varchar(44) NOT NULL,
-  `nama` varchar(44) NOT NULL
+  `nama` varchar(44) NOT NULL,
+  `foto` varchar(50)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -74,7 +75,8 @@ CREATE TABLE `pelanggan` (
   `email_pelanggan` varchar(55) NOT NULL,
   `pass_pelanggan` varchar(55) NOT NULL,
   `nama_pelanggan` varchar(55) NOT NULL,
-  `telepon_pelanggan` varchar(22) NOT NULL
+  `telepon_pelanggan` varchar(22) NOT NULL,
+  `foto` varchar(50)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --

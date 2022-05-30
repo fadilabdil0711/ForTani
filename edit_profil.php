@@ -71,7 +71,7 @@ include 'navbar.php';
         {
             move_uploaded_file($lokasifoto, "foto_pelanggan/$namafoto");
 
-            $koneksi->query("UPDATE pelanggan SET email_pelanggan='$_POST[email]',pass_pelanggan='$_POST[pass]',nama_pelanggan='$_POST[nama]',telepon_pelanggan='$_POST[telp]'
+            $koneksi->query("UPDATE pelanggan SET email_pelanggan='$_POST[email]',pass_pelanggan='$_POST[pass]',nama_pelanggan='$_POST[nama]',telepon_pelanggan='$_POST[telp]',
                 foto_pelanggan='$namafoto' WHERE id_pelanggan = '$id_pelanggan'");
         }
         else
