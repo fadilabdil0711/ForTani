@@ -30,11 +30,11 @@ $pecah=$ambil->fetch_assoc();
      <div class="form-group">
 		<label>Tanggal Posting</label>
         <div class="form-group">
-            <input type="date" class="form-control input-sm" name="tgl_posting" value="<?php echo date('Y-m-d'); ?>" disabled>
+            <input type="date" class="form-control input-sm" name="tgl_posting" value="<?php echo date('Y-m-d'); ?>">
 	</div>
  	<div class="form-group">
  		<label>Teks Berita</label>
- 		<textarea name="teks_berita" class="form-control" rows="15">
+ 		<textarea name="teks_berita" class="ckeditor" name="teks_berita" id="ckedtor">
  			<?php echo $pecah['teks_berita']; ?>
  		</textarea>
  	</div>
@@ -52,11 +52,11 @@ $pecah=$ambil->fetch_assoc();
  	{
  		move_uploaded_file($lokasifoto, "../foto_berita/$namafoto");
 
- 		$koneksi->query("UPDATE berita SET judul='$_POST[judul]',id_kategori='$_POST[kategori]',gambar='$namafoto', teks_berita='$_POST[teks_berita]',id_admin='$id_admin' WHERE id_berita = '$_GET[id]'");
+ 		$koneksi->query("UPDATE berita SET judul='$_POST[judul]',id_kategori='$_POST[kategori]',gambar='$namafoto', teks_berita='$_POST[teks_berita]',tgl_posting='$_POST[tgl_posting]', 'id_admin='$id_admin' WHERE id_berita = '$_GET[id]'");
  	}
  	else
  	{
-		$koneksi->query("UPDATE berita SET judul='$_POST[judul]',id_kategori='$_POST[kategori]', teks_berita='$_POST[teks_berita]',id_admin='$id_admin' WHERE id_berita = '$_GET[id]'");
+		$koneksi->query("UPDATE berita SET judul='$_POST[judul]',id_kategori='$_POST[kategori]', teks_berita='$_POST[teks_berita]',tgl_posting='$_POST[tgl_posting]',id_admin='$id_admin' WHERE id_berita = '$_GET[id]'");
  	}
  	echo "<script>alert ('Data telah diubah'); </script>";
 	echo "<div class='alert alert-info'>Data Berhasil diubah</div>";

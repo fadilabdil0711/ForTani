@@ -26,7 +26,7 @@ if (isset($_POST["kirim"]))
 
 
 
-<h2>Laporan Pembelian dari <b><?php echo $tgl_mulai ?></b> sampai <b><?php echo $tgl_sampaii  ?></b></h2>
+<h2>Laporan Pembelian mulai <b><?php echo $tgl_mulai ?></b> hingga <b><?php echo $tgl_sampaii  ?></b></h2>
 <hr>
 
 <form action="" method="POST">

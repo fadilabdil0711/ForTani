@@ -59,7 +59,7 @@ include 'koneksi.php';
 			<div class="container konten-wrapper">
 			<div class="panel panel-default">
 				<div class="panel-body main">
-					<div class="col-md-8">
+					<div class="col-md-12">
 					<?php while ($index = $ambil->fetch_array()) { ?>
 						<div class="post">
 							<div class="row post-title">

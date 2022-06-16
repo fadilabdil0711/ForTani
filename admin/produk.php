@@ -9,7 +9,7 @@
 			<td><b>Nomor</b></td>
 			<td><b>Nama</b></td>
 			<td><b>Harga</b></td>
-			<td><b>Berat</b></td>
+			<td><b>Berat (gr)</b></td>
 			<td><b>Foto</b></td>
 			<td><b>Deskripsi</b></td>
 			<td><b>Stok</b></td>
@@ -31,7 +31,7 @@
 			<td align="center" bgcolor="white"><?php echo $pecah['deskripsi_produk'];?></td>
 			<td align="center" bgcolor="white"><?php echo $pecah['stok_produk'];?></td>
 			<td align="center" bgcolor="white">
-				<a href="index.php?halaman=hapusproduk&id=<?php echo $pecah['id_produk']; ?>" class="btn-danger btn">  Hapus</a>
+				<!-- <a href="index.php?halaman=hapusproduk&id=<?php echo $pecah['id_produk']; ?>" class="btn-danger btn">  Hapus</a> -->
 				<a href="index.php?halaman=ubahproduk&id=<?php echo $pecah['id_produk']; ?>" class="btn btn-warning">  Ubah</a>
 			</td>
 		</tr>

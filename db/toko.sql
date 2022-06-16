@@ -40,7 +40,7 @@ CREATE TABLE `admin` (
 
 INSERT INTO `admin` (`id_admin`, `user`, `pass`, `nama`) VALUES
 (1, 'admin', 'admin', 'admin'),
-(2, 'fadil', 'fadil', 'fadil');
+(2, 'fadil', 'fadil', 'fadil'),
 (3, 'rizqi', 'rizqi', 'rizqi');
 -- --------------------------------------------------------
 

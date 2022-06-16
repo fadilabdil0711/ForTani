@@ -24,11 +24,11 @@
 	<div class="form-group">
 		<label>Tanggal Posting</label>
         <div class="form-group">
-            <input type="date" class="form-control input-sm" name="tgl_posting" value="<?php echo date('Y-m-d'); ?>" disabled>
+            <input type="date" class="form-control input-sm" name="tgl_posting" value="<?php echo date('Y-m-d'); ?>">
 	</div>
 	<div class="form-group">
 		<label>Teks Berita</label>
-		<textarea class="form-control input-sm" name="teks_berita" rows="15" id="editor"></textarea>
+		<textarea class="ckeditor" name="teks_berita" id="ckedtor"></textarea>
 	</div>
 	
 	<button class="btn btn-primary" name="save">Simpan</button>
@@ -36,7 +36,7 @@
 <?php 
 if (isset($_POST['save']))
 {	
-	$tgl_posting = date('Y-m-d H:i:s');
+	$tgl_posting = date('Y-m-d');
     $id_admin = $_SESSION["admin"]["id_admin"];
 	$nama = $_FILES['foto']['name'];
 	$lokasi = $_FILES ['foto']['tmp_name'];

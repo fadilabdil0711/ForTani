@@ -26,7 +26,7 @@ $pecah = $ambil->fetch_assoc();
  			</tr>
  			<tr>
  				<th>password</th>
- 				<td><?php echo $pecah["pass"] ?></td>
+ 				<td id="password"><?php echo $pecah["pass"] ?></td>
  			</tr>
  		</table>
         <a href="index.php?halaman=editprofil" class="btn btn-primary">Edit Profil</a>
